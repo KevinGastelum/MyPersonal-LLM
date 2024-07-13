@@ -26,6 +26,9 @@ OUTPUT:
 
 ### Pytorch - Deep Learning library used to train our Bigram model
 
+Download Pytorch free - https://pytorch.org/get-started/locally/
+(NVIDIA GPU with CUDA needed, or get use one free with [Google Colab](https://colab.research.google.com/))
+
 Enable GPU CUDA tensors if available for faster training times
 
 https://pytorch.org/tutorials/beginner/basics/intro.html
