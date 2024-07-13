@@ -21,3 +21,15 @@ OUTPUT:
 81
 
 ```
+
+### Pytorch Deep Learning library used to train our model with GPU CUDA tensors
+
+https://pytorch.org/tutorials/beginner/basics/intro.html
+
+```python
+# Check if GPU CUDA tensors are available otherwise use CPU
+import torch
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+print(device)
+
+```
