@@ -22,7 +22,7 @@ OUTPUT:
 
 ```
 
-### Pytorch Deep Learning library used to train our model with GPU CUDA tensors
+## Pytorch - Deep Learning library used to train our Bigram model, enabling GPU CUDA tensors for faster training times
 
 https://pytorch.org/tutorials/beginner/basics/intro.html
 
