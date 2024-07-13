@@ -1,4 +1,4 @@
-# Building an LLM from Scratch step by step
+# Building a GPT-like LLM from Scratch step by step
 
 ## [Step 1 - Experimenting with Text files](1.bigramModel.ipynb)
 
