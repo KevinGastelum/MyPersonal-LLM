@@ -1,6 +1,6 @@
 # [Step 1 - Experimenting with Text files](1.bigramModel.ipynb)
 
-The model we will be using for this 1st section is called a [Bigram](https://web.stanford.edu/~jurafsky/slp3/3.pdf) model, which is a type of Natural language processing (NLP) model that predicts a word based on the immediately preceding word.
+The model we will be using for this 1st section is called a [Bigram](https://web.stanford.edu/~jurafsky/slp3/3.pdf) model. Which is a type of Natural language processing (NLP) model that predicts a word based on the immediately preceding word.
 
 Text file used is the book Wizard of OZ which you can download from Gutenberg library for free.
 <br>Click link and make sure you select "Plain Text UTF-8"
