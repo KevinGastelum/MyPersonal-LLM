@@ -1,4 +1,4 @@
-# Step 1 - Experimenting with Text files
+[# Step 1 - Experimenting with Text files](1.bigramModel.ipynb)
 
 The model we will be using for this 1st section is called a [Bigram](https://web.stanford.edu/~jurafsky/slp3/3.pdf) model, which is a type of Natural language processing (NLP) model that predicts a word based on the immediately preceding word.
 
