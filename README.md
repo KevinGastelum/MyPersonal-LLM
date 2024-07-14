@@ -1,8 +1,8 @@
 # Building a GPT-like LLM from Scratch step by step
 
-## [Step 1 - Experimenting with Text files](1.bigramModel.ipynb)
+## [Step 1 - Experimenting with Text files](1._BigramModel.ipynb)
 
-The model we will be using for this 1st section is called a [Bigram](https://web.stanford.edu/~jurafsky/slp3/3.pdf) model. Which is a type of Natural language processing (NLP) model that predicts a word based on the immediately preceding word.
+The model we will be using for this 1st section is called a [Bi-gram](https://web.stanford.edu/~jurafsky/slp3/3.pdf) model. Which is a type of Natural language processing (NLP) model that predicts a word based on the immediately preceding word.
 
 Text file used is the book Wizard of OZ which you can download from Gutenberg library for free.
 <br>Make sure to select "Plain Text UTF-8"
@@ -32,7 +32,7 @@ Enable GPU CUDA tensors if available for faster training times<br>
 https://pytorch.org/tutorials/beginner/basics/intro.html
 
 ```python
-# Check if GPU CUDA tensors are available otherwise use CPU
+# Check if GPU CUDA is enabled otherwise use CPU
 import torch
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 print(device)
