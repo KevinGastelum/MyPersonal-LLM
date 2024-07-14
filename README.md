@@ -32,11 +32,12 @@ Enable GPU CUDA tensors if available for faster training times<br>
 https://pytorch.org/tutorials/beginner/basics/intro.html
 
 ```python
-# Check if GPU CUDA is enabled otherwise use CPU
+# import Pytorch libs
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
 
+# Check if GPU CUDA is enabled otherwise use CPU
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 print(device)
 
