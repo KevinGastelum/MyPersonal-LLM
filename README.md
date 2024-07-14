@@ -34,6 +34,9 @@ https://pytorch.org/tutorials/beginner/basics/intro.html
 ```python
 # Check if GPU CUDA is enabled otherwise use CPU
 import torch
+import torch.nn as nn
+from torch.nn import functional as F
+
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 print(device)
 
