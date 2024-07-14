@@ -188,9 +188,6 @@ tensor([[63, 66, 74,  1, 71, 59, 56, 64],
 ### Creating our Bi-gram model and defining a Forward pass function
 
 Forward Pass - This process involves passing input data through set of layers called neural nets and applying math transformations (using weights, bias, activation functions) that help our model learn and identify patterns or relationships in the data.
-
-### Probability dstribution of next-token predictions for English characters<br>
-
 <img src="data/forward_pass.jpg">
 
 ```python
@@ -240,5 +237,7 @@ OUTPUT:
 '\nN(buZ? ssTI,b1([RlBhsnb\n-05D\nSzL\'mN2j_TjxD[lNRB&HF);JN2WH,I-ilE0BSFvrOsHB,c3lvw.kc"_&lW(jEYP5\n]7u\ufeffu2qZ[ChrBdIl&jv2LM.)tso?DStp]w) ,v:.p.HEWP?MbyTe\nAJaz_RYq11SY?5M]s6gnef;-E0y\ufeff\ufeffm\ufeff;h&&?-"NJJwnx\ufeffZK\'_3z\njTEA!-O.mkHYo5"cIN?M1;([3fsYG?:Yail&EW yC\ufeff)d2bA&7P,[kdYi yCYG? "lPv?ZaPV7FZD1c"5CfT\ufeffqA&jU]GVDC4yRmCaRxnm2IgT?ZYYaq0]OQo_8auOKFi:Y)_H,,iwAB!m_GsL&k1?Z2:N25"BNrk]1\ufeffZ-jclY3oEuWwTh:]Vx4jLD,,E]L4BvHYeS "f;n\'Nq1&u?A!;4?Wss6N[JBNQuf4]1GM\ufeffhF,E3?DtcG1hh5E9?\nA&JNo\'R4aSWif\'J_w(ediuf;!&&Z\ufeffTaB5tAqv[jzGJwc]ON2t4Zn'
 
 ```
+
+### Probability dstribution of next-token predictions for English characters<br>
 
 <img src="data/next-token_probability_distribution.jpg">
