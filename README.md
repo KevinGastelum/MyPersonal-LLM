@@ -115,7 +115,6 @@ After converting our text characters into integers we want to group our values i
 Think of blocks as words and batches as multiple words strung together
 
 ```python
-# Create block size, think of this as the words we want to be chunked together
 block_size = 8
 batch_size = 4
 
@@ -165,7 +164,7 @@ def get_batch(split):
   return x, y
 
 x, y = get_batch('train')
-print('inputs: ')
+print('Inputs: ')
 print(x)
 print('Predictions: ')
 print(y)
@@ -173,7 +172,7 @@ print(y)
 
 OUTPUT:
 tensor([ 18657,  82894, 157116, 154562])
-inputs:
+Inputs:
 tensor([[56, 63, 66, 74,  1, 71, 59, 56],
         [53, 63, 56,  1, 67, 52, 71, 59],
         [ 1, 51, 53, 56, 52, 72,  5, 57],
@@ -192,7 +191,7 @@ Forward Pass - This process involves passing input data through set of layers ca
 
 ### Probability dstribution of next-token predictions for English characters<br>
 
-<img src="data/next-token_probability_distribution.jpg">
+<img src="data/forward_pass.jpg">
 
 ```python
 class BigramLanguageModel(nn.Module):
@@ -241,3 +240,5 @@ OUTPUT:
 '\nN(buZ? ssTI,b1([RlBhsnb\n-05D\nSzL\'mN2j_TjxD[lNRB&HF);JN2WH,I-ilE0BSFvrOsHB,c3lvw.kc"_&lW(jEYP5\n]7u\ufeffu2qZ[ChrBdIl&jv2LM.)tso?DStp]w) ,v:.p.HEWP?MbyTe\nAJaz_RYq11SY?5M]s6gnef;-E0y\ufeff\ufeffm\ufeff;h&&?-"NJJwnx\ufeffZK\'_3z\njTEA!-O.mkHYo5"cIN?M1;([3fsYG?:Yail&EW yC\ufeff)d2bA&7P,[kdYi yCYG? "lPv?ZaPV7FZD1c"5CfT\ufeffqA&jU]GVDC4yRmCaRxnm2IgT?ZYYaq0]OQo_8auOKFi:Y)_H,,iwAB!m_GsL&k1?Z2:N25"BNrk]1\ufeffZ-jclY3oEuWwTh:]Vx4jLD,,E]L4BvHYeS "f;n\'Nq1&u?A!;4?Wss6N[JBNQuf4]1GM\ufeffhF,E3?DtcG1hh5E9?\nA&JNo\'R4aSWif\'J_w(ediuf;!&&Z\ufeffTaB5tAqv[jzGJwc]ON2t4Zn'
 
 ```
+
+<img src="data/next-token_probability_distribution.jpg">
