@@ -5,7 +5,7 @@
 The model we will be using for this 1st section is called a [Bigram](https://web.stanford.edu/~jurafsky/slp3/3.pdf) model. Which is a type of Natural language processing (NLP) model that predicts a word based on the immediately preceding word.
 
 Text file used is the book Wizard of OZ which you can download from Gutenberg library for free.
-<br>Click link and make sure you select "Plain Text UTF-8"
+<br>Make sure to select "Plain Text UTF-8"
 <br>https://www.gutenberg.org/ebooks/22566
 
 ```python
@@ -26,7 +26,7 @@ OUTPUT:
 
 ### Pytorch - Deep Learning framework used to train neural networks
 
-**NVIDIA GPU with CUDA needed or use one free with [Google Colab](https://colab.research.google.com/)**<br>
+Pytorch requires Nvidia GPU with CUDA enabled or use one free with [Google Colab](https://colab.research.google.com/)<br>
 Download Pytorch - https://pytorch.org/get-started/locally/<br>
 Enable GPU CUDA tensors if available for faster training times<br>
 https://pytorch.org/tutorials/beginner/basics/intro.html
@@ -39,7 +39,7 @@ print(device)
 
 ```
 
-## Comparing speeds: Pytorch vs Numpy for multidimensional array computations
+Comparing speeds: Pytorch vs Numpy for multidimensional array computations
 
 ```python
 # Speed Check - Pytorch (GPU) vs Numpy (CPU)
