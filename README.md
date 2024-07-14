@@ -24,7 +24,7 @@ OUTPUT:
 
 ```
 
-### Pytorch - Deep Learning library used to train our Bigram model
+### Pytorch - Deep Learning framework used to train our Bigram model
 
 **NVIDIA GPU with CUDA needed or use one free with [Google Colab](https://colab.research.google.com/)**<br>
 Download Pytorch - https://pytorch.org/get-started/locally/<br>
@@ -36,5 +36,36 @@ https://pytorch.org/tutorials/beginner/basics/intro.html
 import torch
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 print(device)
+
+```
+
+## Comparing speeds: Pytorch vs Numpy for multidimensional array computations
+
+```python
+# Speed Check - Pytorch (GPU) vs Numpy (CPU)
+torch_rand1 = torch.rand(100, 100, 100, 100).to(device)
+torch_rand2 = torch.rand(100, 100, 100, 100).to(device)
+np_rand1 = torch.rand(100, 100, 100, 100)
+np_rand2 = torch.rand(100, 100, 100, 100)
+
+start_time = time.time()
+
+rand = (torch_rand1 @ torch_rand2)
+
+end_time = time.time()
+
+elapsed_time = end_time - start_time
+print(f'Pytorch CUDA: {elapsed_time:.8f}s')
+
+start_time = time.time()
+
+rand = np.multiply(np_rand1, np_rand2)
+end_time = time.time()
+elapsed_time = end_time - start_time
+print(f'Numpy: {elapsed_time:.8f}s')
+
+OUTPUT:
+Pytorch CUDA: 0.00800133s
+Numpy: 0.19042158s
 
 ```
