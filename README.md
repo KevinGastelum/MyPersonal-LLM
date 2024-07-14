@@ -24,7 +24,7 @@ OUTPUT:
 
 ```
 
-### Pytorch - Deep Learning framework used to train our Bigram model
+### Pytorch - Deep Learning framework used to train neural networks
 
 **NVIDIA GPU with CUDA needed or use one free with [Google Colab](https://colab.research.google.com/)**<br>
 Download Pytorch - https://pytorch.org/get-started/locally/<br>
