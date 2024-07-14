@@ -39,7 +39,7 @@ print(device)
 
 ```
 
-Comparing speeds: Pytorch vs Numpy for multidimensional array computations
+### Comparing speeds: Pytorch vs Numpy for multidimensional array computations
 
 ```python
 # Speed Check - Pytorch (GPU) vs Numpy (CPU)
