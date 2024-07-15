@@ -9,9 +9,9 @@ Text file used is the book Wizard of OZ which you can download from Gutenberg li
 <br>https://www.gutenberg.org/ebooks/22566
 
 ```python
-# Bring in text file "Wizard of OZ"
-with open('data/wizard_of_oz.txt', 'r', encoding='utf=8') as f:
-  text = f.read()
+# Open/read text file "Wizard of OZ"
+with open('data/wizard_of_oz.txt', 'r', encoding='utf=8') as file:
+  text = file.read()
 # print(text[:200])
 # bring in all our uniqye text characters as a set and sort
 chars = sorted(set(text))
@@ -111,7 +111,7 @@ tensor([78,  1,  1, 27, 38, 41, 38, 43, 31, 47,  1, 24, 37, 27,  1, 43, 31, 28,
 
 ### Grouping our characters now integers into block sizes then chunking our blocks into batch sizes
 
-After converting our text characters into integers we want to group our values into blocks then we group those blocks into batch sizes
+After converting our text characters into integers we want to group our values into blocks then we group these blocks into batch sizes
 Think of blocks as words and batches as multiple words strung together
 
 ```python
@@ -185,9 +185,9 @@ tensor([[63, 66, 74,  1, 71, 59, 56, 64],
 
 ```
 
-### Creating our Bi-gram model and defining a Forward pass function
+## Creating our Bi-gram model and defining a Forward pass function
 
-Forward Pass - This process involves passing input data through set of layers called neural nets and applying math transformations (using weights, bias, activation functions) that help our model learn and identify patterns or relationships in the data.
+Forward Pass - This process involves passing input data through set of layers called neural nets and applying math transformations (using weights, bias, activation functions) that help our model learn by identifying patterns or relationships in our the data.
 <img src="data/forward_pass.jpg">
 
 ```python
