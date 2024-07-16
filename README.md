@@ -48,9 +48,9 @@ print(device)
 ```python
 # Speed Check - Pytorch (GPU) vs Numpy (CPU)
 torch_rand1 = torch.rand(100, 100, 100, 100).to(device) # Torch tensors
-torch_rand2 = torch.rand(100, 100, 100, 100).to(device)
+torch_rand2 = torch.rand(100, 100, 100, 100).to(device)# Torch tensors
 np_rand1 = torch.rand(100, 100, 100, 100) # Numpy arrays
-np_rand2 = torch.rand(100, 100, 100, 100)
+np_rand2 = torch.rand(100, 100, 100, 100) # Numpy arrays
 
 start_time = time.time()
 
