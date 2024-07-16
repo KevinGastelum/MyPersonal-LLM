@@ -1,4 +1,4 @@
-# Building a GPT-like LLM from Scratch step by step
+# Building a GPT-like LLM from Scratch w Pytorch
 
 ## [Step 1 - Experimenting with Text files](1._BigramModel.ipynb)
 
