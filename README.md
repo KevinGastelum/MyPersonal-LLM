@@ -296,3 +296,23 @@ OUTPUT:
 
 Optimizers work to find the lowest point of error, therefore finding the optimal weights for our model.
 https://pytorch.org/docs/stable/optim.html
+
+```python
+max_iters = 1000
+# eval_interval = 2500
+learning_rate = 3e-4
+eval_iters = 500
+
+optimizer = torch.optim.AdamW(model.parameters(), lr = learning_rate)
+
+for iter in range(max_iters):
+    # sample of batch data
+    xb, yb = get_batch('train')
+
+    # evaluate the loss
+    logits, loss = model.forward(xb, yb)
+    optimizer.zero_grad(set_to_none=True)
+    loss.backward()
+    optimizer.step()
+loss.item()
+```
