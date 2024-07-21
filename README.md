@@ -303,6 +303,7 @@ max_iters = 1000
 learning_rate = 3e-4
 eval_iters = 500
 
+# AdamW optimizer
 optimizer = torch.optim.AdamW(model.parameters(), lr = learning_rate)
 
 for iter in range(max_iters):
