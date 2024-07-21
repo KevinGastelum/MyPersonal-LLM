@@ -287,4 +287,7 @@ context = torch.zeros((1, 1), dtype=torch.long, device=device)
 generated_chars = decode(m.generate(context, max_new_tokens=500)[0].tolist())
 generated_chars
 
+OUTPUT:
+'\n,wxicfpowe]j,\ufeffAbKuQ\nS_vul!v\ufeff(Zwt],rGD\ufeffW-wSA.[JaQEok.r[q?;rShIneL)vlKw4.p!vN6iix3BS\'sLjHkh:GJik\nZ41Q&ZqM\'E?rC\nAVs8!vH_2ZD9IV\ufeffk)55&\n_2GaC(!1L[J9ZBc[clT"0hgbij[,"06.aqbpblRYd!vu[L\ufeff4qYiy!5K9eL!cPS]\n"\nQt:ElF(icLyDJi_?.AY uwsRtEM_ sm:]w" ]8pvLVD9eL:6[D9z9ip-Cx :PC(R,wz3]ffVA3-Ys.&l?N3&\ufeff_2TIFr3MZ;xpP\'_2Q2k.;NnbpYi9it8_vJi\nA)B.H;rl3mM\'!"]8eLLWM]S62NPI0xKN;QuS,jq:\'; ]8jmuqr3]Zk)8wTm_Jgk8P _]wO.GhrbpoGB&v?mD\ufeff!!4[Fj?&_PZ&BC3SoY-h-H37x\n,L7pKC8af_)1,L!wpeahN(mn!dYs&hu0kwJi"VcClRu.gdQq.5oHq14CkKj?\'G0VO3ep6.Jg'
+
 ```
